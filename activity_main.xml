@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center|top">
+
+    <TextView
+        android:id="@+id/echamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="top|center"
+        android:text="Ovládanie Mobilného robota"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="#10000000"
+        android:layout_margin="10dp"
+        android:hint="Vložiť adresu Bluetooth modulu"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@id/echamp" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Pripojiť"
+        android:textSize="25sp"
+        android:layout_below="@id/address"
+        android:gravity="center"
+        app:backgroundTint="?android:attr/colorActivatedHighlight"/>
+
+    <Button
+        android:id="@+id/front"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_below="@id/connect"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Rovno"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:backgroundTint="?android:attr/colorActivatedHighlight"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/front"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:text="Dozadu"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:backgroundTint="?android:attr/colorActivatedHighlight"/>
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:text="Vlavo"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:backgroundTint="?android:attr/colorActivatedHighlight"/>
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/left"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:text="Vpravo"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:backgroundTint="?android:attr/colorActivatedHighlight"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="371dp"
+        android:layout_height="164dp"
+        android:layout_below="@id/right"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:text=""
+        android:textColor="@color/design_default_color_error"
+        android:textSize="25sp" />
+
+</RelativeLayout>
